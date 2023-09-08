@@ -1,0 +1,17 @@
+
+<h1>Voting portal</h1>
+<h2>Sign in</h2>
+
+<%= form_with model: @user2 do |f| %>
+    <div class="field">
+        <%= f.label :Email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %> 
+    </div><br> 
+    <div class="field">
+        <%= f.label :Password %><br />
+        <%= f.text_field :password, autocomplete: "password" %>
+    </div><br> 
+    <div class="actions">
+        <%= f.submit "Sign up" %>
+    </div>
+<% end %>
